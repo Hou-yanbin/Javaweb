@@ -43,4 +43,24 @@
         <servlet-name>helloServlet</servlet-name>
         <url-pattern>/demo2</url-pattern>
     </servlet-mapping>
+
+<!--    //重新配置一下logincheck，设置一下初始化参数-->
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.jackhou.servlet.LoginServlet</servlet-class>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>jackhou</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>7758521</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/logincheck</url-pattern>
+    </servlet-mapping>
+
 </web-app>
