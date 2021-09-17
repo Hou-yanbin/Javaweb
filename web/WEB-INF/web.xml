@@ -63,4 +63,14 @@
         <url-pattern>/logincheck</url-pattern>
     </servlet-mapping>
 
+<!--    <filter>-->
+<!--        <filter-name>characterFilter</filter-name>-->
+<!--        <filter-class>com.jackhou.filter.CharacterFilter</filter-class>-->
+<!--    </filter>-->
+
+<!--    <filter-mapping>-->
+<!--        <filter-name>characterFilter</filter-name>-->
+<!--        <url-pattern>/login1</url-pattern>-->
+<!--    </filter-mapping>-->
+
 </web-app>

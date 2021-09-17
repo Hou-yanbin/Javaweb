@@ -12,11 +12,12 @@
 <head>
     <title>Title</title>
 </head>
-<body>
+<br>
     <%
         request.setAttribute("date",new Date());
     %>
 <%--    ${date}--%>
-    <fmt:formatDate value="${date}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
+    <fmt:formatDate value="${date}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate></br>
+    <fmt:formatNumber value="153213.1626" maxIntegerDigits="2" maxFractionDigits="3"></fmt:formatNumber>
 </body>
 </html>
