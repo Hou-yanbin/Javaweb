@@ -12,10 +12,12 @@ import java.io.IOException;
  **/
 @WebFilter(filterName = "characterFilter",urlPatterns = "/login1")
 public class CharacterFilter implements Filter {
-
+    public CharacterFilter(){
+        System.out.println("通过无参构造创建了对象");
+    }
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
+        System.out.println("init....");
     }
 
     @Override
@@ -27,6 +29,6 @@ public class CharacterFilter implements Filter {
 
     @Override
     public void destroy() {
-
+        System.out.println("destory销毁....");
     }
 }
